@@ -1,0 +1,15 @@
+@media only screen and (max-width: 960px) {
+    .short-view, .home-tab{
+        width: 100%;
+    }
+
+    .section-content{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .inner-footer{
+        width: 100%;
+    }
+}
