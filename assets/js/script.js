@@ -18,3 +18,12 @@ for(let i = 0; i < tabBtn.length; i++){
         
     })
 }
+
+// nav toggle function
+
+const navToggleBtn = document.querySelector('.navbar .nav-toggle-btn p')
+const navMenu = document.querySelector('.navbar ul')
+
+navToggleBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('navbar-ul-active')
+})

@@ -6,10 +6,82 @@
     .section-content{
         width: 95%;
     }
+
+    .heroArea .slider .slideItem{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .topbar .lefttopBar img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .logoText p{
+        font-size: 12px;
+    }
+    
+    .topbar .righttopBar p{
+        font-size: 20px;
+    }
+
+    .nav-toggle-btn{
+        display: block;
+    }
+
+    .navbar ul{
+        text-align: left;
+        display: none;
+    }
+
+    .navbar ul li{
+        display: block;
+        margin: 0 3px;
+        border-bottom: 0.5px dotted #fff;
+    }
+
+    .heroArea .slider .slideItem{
+        font-size: 1.8rem;
+    }
+
+    .short-view-desc .short-view-desc-part{
+        width: 50%;
+    }
+
+    .left-cont, .right-cont{
+        width: 98%;
+    }
+
+    .ca-map, .ca-std, .ca-cnt{
+        width: 46%; 
+        margin-top: 20px;
+    }
+
 }
 
 @media only screen and (max-width: 1024px){
     .inner-footer{
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .topbar .lefttopBar img{
+        height: 20px;
+        width: 20px;
+    }
+
+    .short-view-header h2{
+        font-size: 20px;
+    }
+
+    .short-view-desc .short-view-desc-part{
+        width: 100%;
+    }
+
+    .ca-map, .ca-std, .ca-cnt{
+        width: 96%; 
+        margin-top: 20px;
     }
 }
