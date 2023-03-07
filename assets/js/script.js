@@ -4,7 +4,7 @@ const tabCnt = document.querySelectorAll('.home-tab-content .achievement-content
 for(let i = 0; i < tabBtn.length; i++){
     tabBtn[i].addEventListener('click', () => {
 
-        
+
         for(let k = 0; k < tabBtn.length; k++){
             tabBtn[k].classList.remove('active')
         }
@@ -15,7 +15,7 @@ for(let i = 0; i < tabBtn.length; i++){
         }
         tabCnt[i].classList.add('achievement-content-active')
 
-        
+
     })
 }
 
@@ -26,4 +26,23 @@ const navMenu = document.querySelector('.navbar ul')
 
 navToggleBtn.addEventListener('click', () => {
     navMenu.classList.toggle('navbar-ul-active')
+})
+
+// notice page function
+
+// noitce page button
+const ntBtn = document.querySelector('#notice-page-button')
+
+ntBtn.addEventListener('click', () => {
+    document.location.href = 'notice.html'
+})
+
+// admission page function
+
+// admission page button
+
+const admissionBtn = document.querySelector('#admission-btn')
+
+admissionBtn.addEventListener('click', () =>{
+    document.location.href = 'admission.html'
 })

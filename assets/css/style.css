@@ -1,129 +1,4 @@
-/* commom css */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-
-.mainDiv{
-    max-width: 100%;
-}
-
-img{
-    max-width: 100%;
-}
-
-/* commom css */
-
-header{
-    width: 100%;
-    height: auto;
-}
-
-.topbar{
-    width: 100%;
-    height: auto;
-    background-color: lightgreen;
-    overflow: hidden;
-    padding: 10px 20px;
-}
-
-.topbar .lefttopBar{
-    width: 50%;
-    float: left;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.logoText{
-    margin-left: 10px;
-}
-
-.topbar .lefttopBar img{
-    height: 40px;
-    width: 40px;
-}
-
-.topbar .righttopBar{
-    width: 50%;
-    float: right;
-    text-align: right;
-}
-
-.topbar .righttopBar p{
-    margin-top: 7px;
-    font-weight: bold;
-    font-size: 25px;
-    text-shadow: 2px 1px #6ECCAF;
-}
-
-.navbar{
-    width: 100%;
-    height: auto;
-    background-color: #6ECCAF;
-    padding: 3px 10px;
-    overflow: hidden;
-}
-
-.navbar ul{
-    list-style-type: none;
-    text-align: center;
-}
-
-.navbar ul.navbar-ul-active{
-    display: block;
-    transition: 0.5s ease;
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -ms-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-}
-
-.navbar ul li{
-    display: inline-block;
-    margin: 0 3px;
-}
-
-.navbar ul li a{
-    display: block;
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-    padding: 5px 8px;
-
-    border-radius: 3.5px;
-    -webkit-border-radius: 3.5px;
-    -moz-border-radius: 3.5px;
-    -ms-border-radius: 3.5px;
-    -o-border-radius: 3.5px;
-}
-
-.navbar ul li a:hover{
-    background-color: lightblue;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-}
-
-.nav-toggle-btn{
-    width: 100%;
-    text-align: right;
-    font-size: 25px;
-    margin-right: 15px;
-    cursor: pointer;
-    display: none;
-}
-
-.nav-toggle-btn p{
-    float: right;
-    width: fit-content;
-}
 
 /* hero area */
 
@@ -176,7 +51,7 @@ header{
 .short-view-desc{
     margin: 30px 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -187,7 +62,7 @@ header{
     padding: 10px 20px;
 }
 
-.short-view-desc-part button{
+.short-view-desc-part input{
     background: transparent;
     margin-top: 10px;
     border: none;
@@ -224,6 +99,11 @@ header{
 .desc-part-body{
     line-height: 23px;
     font-weight: 100;
+}
+
+.desc-part-body ul li{
+    list-style-type: none;
+    margin: 5px 0;
 }
 
 .short-n-v .n-v-1 h4::after{
@@ -326,13 +206,37 @@ header{
     -moz-transition: 0.5s linear;
     -ms-transition: 0.5s linear;
     -o-transition: 0.5s linear;
+
 }
 
 .achievement-content-active{
     display: block;
 }
 
+.tbc-3 h3{
+    margin-bottom: 20px;
+}
 
+.home-tab-content .tbc-3 .left-cont, .home-tab-content .tbc-3 .right-cont{
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 12px;
+    color: #000;
+    opacity: 0.8;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.home-tab-content .tbc-3 .left-cont img, .home-tab-content .tbc-3 .right-cont img{
+    margin: 0 auto;
+    height: 200px;
+    width: auto;
+}
 
 
 /* tab home */
@@ -385,66 +289,95 @@ header{
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
+    margin-top: 12px;
+    color: #000;
+    opacity: 0.8;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: justify;
 }
 
-/* footer */
+/* ================================================= */
 
-footer{
-    background: linear-gradient(to top,rgba(104, 185, 132, 0.8), rgba(104, 185, 132, 0.8)), url('../images/laptop_Kirill-Smyslov_getty.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* ================================================= */
+
+.notices{
+    width: 960px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+.notices h2{
+    margin: 40px 0;
+    text-align: center;
+    font-size: 35px;
+}
+
+.notices table{
+    border: 1px solid #000;
+    border-collapse: collapse;
     width: 100%;
-    height: auto;
-    margin-top: 40px;
-    color: #fff;
-
-    padding: 40px 0;
 }
 
-.inner-footer{
-    width: 1024px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin: 0 auto;
-    flex-wrap: wrap;
+.notices table tr th{
+    border: 1px solid #000;
+    padding: 5px 1px;
 }
 
-.ca-head h5{
-    font-size: 20px;
-    font-weight: 300;
+.notices table tr td{
+    border: 1px solid #000;
+    padding: 7px 1px;
+    text-align: center;
 }
 
-.ca-head h5::after{
+.notices table tr td:nth-child(2){
+    width: 85%;
+}
+
+/* ================================================= */
+
+/* ================================================= */
+
+
+.admission-page{
+    width: 960px;
+    margin: 40px auto;
+    padding: 20px 5px;
+}
+
+.admission-page h2{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 35px;
+}
+
+.ad-page-cont{
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.ad-page-cont h3{
+    margin-bottom: 20px;
+}
+
+.ad-page-cont h3::after{
     content: '';
-    background-color: #fff;
     height: 2px;
     width: 100%;
     display: block;
-    margin: 20px 0;
+    background-color: orange;
+    margin: 10px 0;
 }
 
-.ca-map, .ca-std, .ca-cnt{
-    width: 30%;
-    font-weight: 300;
-    
+.ad-page-cont p{
+    line-height: 30px;
 }
 
-.ca-std p, .ca-cnt p{
-    font-size: 19px;
-    letter-spacing: 2px;
+.ad-page-cont a{
+    margin-bottom: 20px;
+    display: block;
 }
 
-.ca-std p{
-    line-height: 25px;
-}
+/* ================================================= */
 
-.ca-map iframe{
-    width: 100%;
-    border: 2px solid #fff;
-}
-
-
-
-/* footer */
+/* ================================================= */

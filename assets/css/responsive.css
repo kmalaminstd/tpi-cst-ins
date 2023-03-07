@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 960px) {
     .short-view, .home-tab{
         width: 100%;
@@ -56,6 +57,10 @@
     .ca-map, .ca-std, .ca-cnt{
         width: 46%; 
         margin-top: 20px;
+    }
+
+    .achievement-content .left-cont, .achievement-content .right-cont{
+        width: 100%;
     }
 
 }

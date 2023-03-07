@@ -1,0 +1,190 @@
+/* commom css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+
+.mainDiv{
+    max-width: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* commom css */
+
+header{
+    width: 100%;
+    height: auto;
+}
+
+.topbar{
+    width: 100%;
+    height: auto;
+    background-color: lightgreen;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+.topbar .lefttopBar{
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.logoText{
+    margin-left: 10px;
+}
+
+.topbar .lefttopBar img{
+    height: 40px;
+    width: 40px;
+}
+
+.topbar .righttopBar{
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.topbar .righttopBar p{
+    margin-top: 7px;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 2px 1px #6ECCAF;
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: #6ECCAF;
+    padding: 3px 10px;
+    overflow: hidden;
+}
+
+.navbar ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.navbar ul.navbar-ul-active{
+    display: block;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    padding: 5px 8px;
+
+    border-radius: 3.5px;
+    -webkit-border-radius: 3.5px;
+    -moz-border-radius: 3.5px;
+    -ms-border-radius: 3.5px;
+    -o-border-radius: 3.5px;
+}
+
+.navbar ul li a:hover{
+    background-color: lightblue;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.nav-toggle-btn{
+    width: 100%;
+    text-align: right;
+    font-size: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-toggle-btn p{
+    float: right;
+    width: fit-content;
+}
+
+/* footer */
+
+footer{
+    background: linear-gradient(to top,rgba(104, 185, 132, 0.8), rgba(104, 185, 132, 0.8)), url('../images/laptop_Kirill-Smyslov_getty.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    color: #fff;
+
+    padding: 40px 0;
+}
+
+.inner-footer{
+    width: 1024px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.ca-head h5{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.ca-head h5::after{
+    content: '';
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+}
+
+.ca-map, .ca-std, .ca-cnt{
+    width: 30%;
+    font-weight: 300;
+    
+}
+
+.ca-std p, .ca-cnt p{
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.ca-std p{
+    line-height: 25px;
+}
+
+.ca-map iframe{
+    width: 100%;
+    border: 2px solid #fff;
+}
+
+
+
+/* footer */
+
