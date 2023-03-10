@@ -206,7 +206,27 @@
     -moz-transition: 0.5s linear;
     -ms-transition: 0.5s linear;
     -o-transition: 0.5s linear;
+    animation: moveing 0.5s ease;
+    -webkit-animation: moveing 0.5s ease;
+}
 
+@keyframes moveing {
+    from{
+        transform:translateX(50px);
+        -webkit-transform:translateX(50px);
+        -moz-transform:translateX(50px);
+        -ms-transform:translateX(50px);
+        -o-transform:translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0);
+        -webkit-transform:translateX(0);
+        -moz-transform:translateX(0);
+        -ms-transform:translateX(0);
+        -o-transform:translateX(0);
+        opacity: 1;
+}
 }
 
 .achievement-content-active{
@@ -377,6 +397,159 @@
     margin-bottom: 20px;
     display: block;
 }
+
+/* ================================================= */
+
+/* ================================================= */
+
+/*================================================= contact page design ================================================= */
+
+.contactpage{
+    width: 960px;
+    margin: 30px auto;
+}
+
+.social-section{
+    width: 250px;
+    margin: 20px auto;
+}
+
+.social-section .social-div{
+    width: 100%;
+    background-color: green;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.social-section .social-div:active{
+    animation: sociaMove 0.5s ease;
+    -webkit-animation: sociaMove 1s ease;
+}
+
+@keyframes sociaMove {
+    from{
+        transform: rotateX(50deg);
+        -webkit-transform: rotateX(50deg);
+        -moz-transform: rotateX(50deg);
+        -ms-transform: rotateX(50deg);
+        -o-transform: rotateX(50deg);
+}
+    to{
+        transform: rotateX(0);
+        -webkit-transform: rotateX(0);
+        -moz-transform: rotateX(0);
+        -ms-transform: rotateX(0);
+        -o-transform: rotateX(0);
+}
+}
+
+.social-div .main-s-link{
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 25px;
+    width: 100%;
+    color: #fff;
+}
+
+.social-section .fb{
+    background-color: #3b5998;
+}
+
+.social-div .social-link a{
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+
+.social-icon{
+    width: 10%;
+    float: left;
+    padding: 10px;
+}
+
+.social-link{
+    width: 85%;
+    float: right;
+    padding: 10px;
+}
+
+.messagebox{
+    width: 768px;
+    margin: 40px auto;
+}
+
+.messagebox h3, .ins-add h3, .social-section h3{
+    text-align: center;
+    font-size: 29px;
+}
+
+.messagebox h3::after, .ins-add h3::after, .social-section h3::after{
+    content: '';
+    height: 2px;
+    width: 200px;
+    margin: 8px auto;
+    display: block;
+    background-color: orange;
+}
+
+.messagebox form{
+    width: 100%;
+}
+
+.messagebox form input, .messagebox form textarea{
+    width: 100%;
+    margin: 5px 0;
+    outline: none;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.messagebox form input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid lightcoral;
+    box-shadow: inset 4px 2px 5px 0px #ccc,
+    inset 1px 1px 5px 0px;
+}
+
+.messagebox form textarea{
+    resize: none;
+    box-shadow: inset 4px 2px 5px 0px #ccc,
+    inset 1px 1px 5px 0px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid lightcoral;
+}
+
+.messagebox form button{
+    background-color: orange;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    padding: 8px 15px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.ins-add{
+    width: 768px;
+    margin: 40px auto;
+}
+
+.ins-add h3{
+    text-align: center;
+}
+
 
 /* ================================================= */
 
