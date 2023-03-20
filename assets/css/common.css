@@ -8,6 +8,12 @@
     font-family: 'Noto Sans Bengali', sans-serif;
 }
 
+.clearify{
+    content: '';
+    clear: both;
+    display: table;
+}
+
 
 .mainDiv{
     max-width: 100%;
